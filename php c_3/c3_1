@@ -1,0 +1,15 @@
+<?php
+  include '../code.php';
+
+  //1、返回PHP配置信息
+  echo phpinfo();
+  //2、返回当前时间戳
+   echo time();
+  //3、返回当前日期
+  echo '<br/>';
+  echo date('Y年M月d日 H：i:s');
+  //4、将2015-12-12 12:25:36 转成2015年12月12日 12:25:36
+  $time = strtotime('2015-12-12 12:25:36');
+  echo date('Y年M月d日 H:i:s',$time);
+  echo '<br/>';
+?>
