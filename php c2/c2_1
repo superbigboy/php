@@ -1,0 +1,6 @@
+<meta charset="utf-8"/>
+<h1>中禹</h1>
+<?php
+	echo "hello zhongyu";
+	echo '<h2>河北承德</h2>';
+?>
