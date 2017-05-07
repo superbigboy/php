@@ -1,0 +1,42 @@
+<?php
+//使用foreach函数打印数组内容
+$user = array(
+'name'=>'张三',
+'sex'=>'男',
+'age'=>'20');
+foreach($user as $val){
+	echo $val;
+	echo "<br/>";
+};
+
+foreach($user as $key=>$val){
+	echo $key.':'.$val;
+	echo "<br/>";
+}
+
+//创建购物车数组并输出
+$goods = array(
+	array('id'=>1,'number'=>1001,'name'=>'李宁运动衬衫','price'=>320,'count'=>2,'totalprice'=>640);
+	array('id'=>2,'number'=>1002,'name'=>'耐克小内裤','price'=>220,'count'=>2,'totalprice'=>440);
+	array('id'=>3,'number'=>1003,'name'=>'乔丹运动鞋','price'=>360,'count'=>2,'totalprice'=>880);
+	);
+echo '<table border="1">';
+echo '<tr><th>序号</th><th>商品编号</th><th>商品名称</th><th>价格</th><th>数量</th><th>总价</th></tr>';
+foreach($goods as $good){
+	echo '<tr>';
+	foreach($good as $val){
+		echo '<td>';
+		echo $val;
+		echo '</td>';
+	}
+	echo '</tr>';
+}
+echo '</table>';
+
+//按值排序
+//重新设定索引
+//保留原有索引
+sort($arr);  //数组升序排序
+rsort($arr)   //降序
+
+?>
