@@ -1,0 +1,31 @@
+<?php 
+include("../code.php");
+$name='张三';
+$password = '123456';
+
+//3种方式创建表单
+
+//单引号为主
+echo '<form>';
+echo '用户名：<input type="text" value="'.$name.'"/><br/>';
+echo '密码：<input type="password" value="'.$password.'"/><br/>';
+echo '登录<input type="button" value="登录"/><br/>';
+echo '</form>';
+
+//双引号为主
+echo "<form>";
+echo "用户名：<input type='text' value='$name'/><br/>";
+echo "密码：<input type='password' value='$password'/><br/>";
+echo "<input type='button' value='登录'>";
+echo "<form/>";
+echo "<br/>";
+
+//heredoc
+$form = <<< FORM
+    用户名：<input type="text" value="$name"/><br/>
+    密码：<input type="password" value="$password"/><br/>
+    <input type="button" value="登录">
+FORM;
+echo $form;    
+?>
+
