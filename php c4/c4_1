@@ -20,7 +20,6 @@ echo "<input type='button' value='登录'>";
 echo "<form/>";
 echo "<br/>";
 
-//heredoc
 $form = <<< FORM
     用户名：<input type="text" value="$name"/><br/>
     密码：<input type="password" value="$password"/><br/>
