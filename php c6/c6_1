@@ -1,0 +1,11 @@
+<?php
+header('Content-Type:text/html;charset=utf-8');
+/*若用户未登录，显示登录链接；若已登录，显示欢迎信息和注销链接*/
+session_start();
+if(isset($_SESSION['username'])){
+	echo '欢迎你'.$_SESSION['username'];
+	echo '<a href="logout.php">注销</a>';
+}
+else{
+	echo '<a href="login.php">登录</a>';
+}
