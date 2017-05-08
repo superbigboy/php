@@ -1,0 +1,9 @@
+<?php
+header('Content-Type:text/html;charset=utf-8');
+header("refresh:3;url=index.php");
+/*logout.php：注销用户登录页面，注销后，跳转到index.php*/
+session_start();
+if((isset$_SESSION['username'])){
+	session_destroy();
+	header('Location:index.php');
+}
