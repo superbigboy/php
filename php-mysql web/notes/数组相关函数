@@ -1,0 +1,32 @@
+<?php
+	//创建倒序数组
+	//前两个参数是起止范围，第三个参数是步长，为负数时是倒序
+	$numbers = range(10,1,-1);
+
+	//explode()函数分行
+	explode("\t",$orders[$i]);
+	//将传入的字符串按\t分块，可选参数limit控制着返回的最大块数
+
+	current($array_name);
+	//创建一个数组指针即指向第一个元素，该函数返回数组的第一个元素
+
+	next();
+	//调用next将会使指针前移一个元素，返回新的当前元素
+
+	each();
+	//调用each函数将会返回当前元素然后将指针前移一个元素
+
+	reset(array);
+	//可以将指针移到第一个元素，并将第一个元素返回
+
+	end(array);
+	//将指针移到最后一个元素，将最后一个元素返回
+	
+	array_walk(array, funcname);
+	//对数组内的每一个元素使用函数，参数分别为数组名称、函数名称
+
+	//统计数组元素个数
+	count(var);
+	sizeof();
+	array_count_values(input);
+?>
