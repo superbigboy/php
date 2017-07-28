@@ -1,0 +1,14 @@
+<?php
+	//create short variable name
+	$DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+	$orders = file("orders.txt");
+
+	//统计订单数量
+	$number_of_orders = count($orders);
+	if($number_of_orders == 0){
+		echo "<p><strong>Bo orders pending. Please try again later.</p></strong>";
+	}
+	for($i=0;$i<$number_of_orders;$i++){
+		echo $orders[$i]."<br/>";
+	}
+?>
