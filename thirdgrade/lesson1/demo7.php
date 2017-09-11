@@ -2,8 +2,6 @@
 	//has-a关系在php中的实现
 	//PSR编码规范----------课下了解
 	namespace App;
-
-	//定义一个人的类
 	class Person
 	{
 		public $name ='';
