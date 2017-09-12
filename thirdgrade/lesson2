@@ -1,0 +1,14 @@
+<?php
+//使用composer扩展库
+//1.引入自动加载文件
+require 'vendor/autoload.php';
+use Carbon\Carbon;
+
+//  使用carbon
+dump(Carbon::now()->toDateTimeString());
+
+// 使用扩展库dd
+$arr=[1,3,5];
+var_dump($arr);
+dump($arr);//输出
+// dd($arr);//输出结束执行  dump();exit
