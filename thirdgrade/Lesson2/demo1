@@ -1,0 +1,4 @@
+<?php 
+require_once 'Person.php';
+$birthday = new Date(1996,6,24);
+$p = new Person('test',$birthday);
